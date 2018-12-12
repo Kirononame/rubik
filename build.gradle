@@ -12,14 +12,19 @@ plugins {
 
     // Apply the application plugin to add support for building an application
     id 'application'
+
+    id 'eclipse'
 }
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = /*'MoleculeSampleApp'*/ 'App'
+
+
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
+    
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
